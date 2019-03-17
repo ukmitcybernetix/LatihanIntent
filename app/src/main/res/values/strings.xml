@@ -2,5 +2,13 @@
     <string name="app_name">LatihanIntent</string>
     <string name="pindah_activity_login">Pindah Activity Login</string>
     <string name="activity_membawa_data">Activity Membawa Data</string>
-    <string name="activity_parcelable">Activity Parcelable</string>
+    <string name="activity_parcelable">Activity Input Data</string>
+    <string name="activity_kedua">Ini Activity Ke Dua</string>
+    <string name="nama_lengkap">Nama Lengkap</string>
+    <string name="jurusan">Jurusan</string>
+    <string name="kelas">Kelas</string>
+    <string name="kirim_data">Kirim Data</string>
+    <string name="activity_data_balik">Activity Data Balik</string>
+    <string name="nama_lengkap">Nama Lengkap</string>
+    <string name="kirim_nama">Kirim Nama</string>
 </resources>
