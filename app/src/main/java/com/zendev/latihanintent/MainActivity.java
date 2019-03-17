@@ -8,7 +8,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    Button btnLogin, btnData, btnInputData;
+    Button btnLogin, btnData, btnInputData, btnBroadcast, btnImplicit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +24,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnInputData = findViewById(R.id.btn_activity_input_data);
         btnInputData.setOnClickListener(this);
 
+        btnBroadcast = findViewById(R.id.btn_broadcast_receiver);
+        btnBroadcast.setOnClickListener(this);
+
+        btnImplicit = findViewById(R.id.btn_implicit);
+        btnImplicit.setOnClickListener(this);
+
     }
 
     @Override
@@ -35,15 +41,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_activity_data:
                 Intent moveData = new Intent(MainActivity.this, DataActivity.class);
-                moveData.putExtra(DataActivity.EXTRA_NAMA_DEPAN, "Fattahul");
-                moveData.putExtra(DataActivity.EXTRA_NAMA_BELAKANG, "Akbar");
-                moveData.putExtra(DataActivity.EXTRA_UMUR, 21);
+                moveData.putExtra(DataActivity.EXTRA_IMG, R.drawable.ic_launcher_background);
+                moveData.putExtra(DataActivity.EXTRA_JUDUL, "Universitas Putra Indonesia");
+                moveData.putExtra(DataActivity.EXTRA_DESKRIPSI, "Universitas Putra Indonesia adalah universitas yang berada di kota padang");
                 startActivity(moveData);
                 break;
             case R.id.btn_activity_input_data:
                 Intent moveInputData = new Intent(MainActivity.this, InputDataActivity.class);
                 startActivity(moveInputData);
                 break;
+            case R.id.btn_broadcast_receiver:
+                Intent moveBroadcast = new Intent(MainActivity.this, BroadcastReceiverActivity.class);
+                startActivity(moveBroadcast);
+                break;
+            case R.id.btn_implicit:
+                Intent moveImplicit = new Intent(MainActivity.this, ImplicitActivity.class);
+                startActivity(moveImplicit);
         }
     }
 }

@@ -11,10 +11,28 @@
     android:orientation="vertical"
     tools:context=".DataActivity">
 
-    <TextView
-        android:id="@+id/tv_data"
+    <ImageView
+        android:id="@+id/img_gambar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Data Dari Activity Pertama"/>
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_launcher_background"/>
+
+    <TextView
+        android:id="@+id/tv_judul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:text="@string/deskripsi"
+        android:textSize="@dimen/judul"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tv_deskripsi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/jarak_deskripsi"
+        android:text="@string/deskripsi"/>
 
 </LinearLayout>

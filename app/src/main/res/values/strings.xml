@@ -9,6 +9,16 @@
     <string name="kelas">Kelas</string>
     <string name="kirim_data">Kirim Data</string>
     <string name="activity_data_balik">Activity Data Balik</string>
-    <string name="nama_lengkap">Nama Lengkap</string>
     <string name="kirim_nama">Kirim Nama</string>
+    <string name="deskripsi">Deskripsi</string>
+    <string name="broadcast_receiver">Broadcast Receiver</string>
+    <string name="sisa_baterai">Sisa Baterai</string>
+    <string name="lokasi_cari">Masukkan Lokasi Yang Ingin Dicari</string>
+    <string name="open_location">Open Location</string>
+    <string name="open_website">Masukkan URL Website Yang Ingin Dicari</string>
+    <string name="open_websitee">Open Website</string>
+    <string name="share">Masukkan Text Yang Ingin Di Share</string>
+    <string name="share_text">Share Text</string>
+    <string name="telfon">Telfon</string>
+    <string name="open_camera">Open Camera</string>
 </resources>
